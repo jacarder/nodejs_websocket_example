@@ -1,0 +1,29 @@
+{
+  "name": "nodejs_quic_example",
+  "version": "1.0.0",
+  "description": "nodejs_quic_example",
+  "main": "index.js",
+  "scripts": {
+    "copy-files": "copyfiles -u 1 client/**/*.html client/**/*.css dist/client",
+    "build-ts": "tsc",
+    "build": "npm run build-ts && npm run copy-files",
+    "serve": "node dist/server/index.js",
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacarder/nodejs_quic_example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacarder/nodejs_quic_example/issues"
+  },
+  "homepage": "https://github.com/jacarder/nodejs_quic_example#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.5.5"
+  }
+}
